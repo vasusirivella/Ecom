@@ -16,7 +16,7 @@ function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <BrowserRouter basename="/Ecom">
+        <Router basename='/Ecom'>
           <Navbar />
           <Routes>
             <Route path="/" element={<ProductList />} />
@@ -37,7 +37,7 @@ function App() {
             <Route path="/women/all" element={<ProductListingPage />} />
             <Route path="/men/all" element={<ProductListingPage />} />
           </Routes>
-        </BrowserRouter >
+        </Router>
       </CartProvider>
     </AuthProvider>
   );
