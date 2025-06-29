@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/Ecom/static/js/main.8caa887f.js",
+    "reactPlayerPreview.js": "/Ecom/static/js/reactPlayerPreview.73f455c9.chunk.js",
+    "static/media/Naira.jpg": "/Ecom/static/media/Naira.c52a1863e14a2af7cdfd.jpg",
+    "static/media/o1.jpg": "/Ecom/static/media/o1.75b7fbfeb12066f1b730.jpg",
+    "static/media/02.jpg": "/Ecom/static/media/02.c3ff77772420de466fd2.jpg",
+    "static/media/Peach.jpg": "/Ecom/static/media/Peach.0532a7456fe791ac611a.jpg",
+    "static/media/03.jpg": "/Ecom/static/media/03.c62da06588f8ce6b2188.jpg",
+    "static/media/Glori.jpg": "/Ecom/static/media/Glori.1e008f3572d6729300f5.jpg",
+    "static/media/52.jpg": "/Ecom/static/media/52.5eb6ded40756818cf562.jpg",
+    "static/media/the_mail_shirt.jpg": "/Ecom/static/media/the_mail_shirt.a522f28f082bf42e6318.jpg",
+    "static/media/53.jpg": "/Ecom/static/media/53.5a7c2e0b72b1fe44e39b.jpg",
+    "static/media/01.jpg": "/Ecom/static/media/01.4eb1eb88da835881213b.jpg",
+    "static/media/ourstory.jpg": "/Ecom/static/media/ourstory.d0b59f29b1aeff7cd2b7.jpg",
+    "static/media/51.jpg": "/Ecom/static/media/51.2c83b63acd0346622ece.jpg",
+    "static/media/54.jpg": "/Ecom/static/media/54.b712773ab1613cbdc33a.jpg",
+    "static/media/10.jpg": "/Ecom/static/media/10.0a6439530c38213284b3.jpg",
+    "static/media/cherry_red.jpg": "/Ecom/static/media/cherry_red.d2bfd9a6b28f021f2dcb.jpg",
+    "static/media/04.jpg": "/Ecom/static/media/04.a51e98c55ceb1183b833.jpg",
+    "index.html": "/Ecom/index.html",
+    "main.8caa887f.js.map": "/Ecom/static/js/main.8caa887f.js.map",
+    "reactPlayerPreview.73f455c9.chunk.js.map": "/Ecom/static/js/reactPlayerPreview.73f455c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8caa887f.js"
+  ]
+}
