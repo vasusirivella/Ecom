@@ -8,21 +8,35 @@ import {
   Menu,
   MenuItem,
   Box,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  Divider,
 } from '@mui/material';
-import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [anchorElWomen, setAnchorElWomen] = React.useState(null);
   const [anchorElMen, setAnchorElMen] = React.useState(null);
   const [showSearch, setShowSearch] = React.useState(false);
+  const [drawerOpen, setDrawerOpen] = React.useState(false);
 
   return (
     <>
       <AppBar position="fixed" sx={{ background: 'rgba(238, 170, 195, 0.8)', boxShadow: 'none' }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
+          {/* Hamburger Icon for Mobile */}
+          <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+            <IconButton onClick={() => setDrawerOpen(true)} sx={{ color: '#333' }}>
+              <MenuIcon />
+            </IconButton>
+          </Box>
+
           {/* Logo */}
           <Typography
             variant="h6"
@@ -33,7 +47,7 @@ const Navbar = () => {
             पाहरण
           </Typography>
 
-          {/* Navigation Tabs */}
+          {/* Navigation Tabs for Desktop */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
             <Button component={Link} to="/" sx={{ color: '#333' }}>
               Home
@@ -49,7 +63,10 @@ const Navbar = () => {
                 anchorEl={anchorElWomen}
                 open={Boolean(anchorElWomen)}
                 onClose={() => setAnchorElWomen(null)}
-                MenuListProps={{ onMouseEnter: () => setAnchorElWomen(anchorElWomen), onMouseLeave: () => setAnchorElWomen(null) }}
+                MenuListProps={{
+                  onMouseEnter: () => setAnchorElWomen(anchorElWomen),
+                  onMouseLeave: () => setAnchorElWomen(null),
+                }}
               >
                 <MenuItem component={Link} to="/women/pooh">Pooh</MenuItem>
                 <MenuItem component={Link} to="/women/naina">Naina</MenuItem>
@@ -69,7 +86,10 @@ const Navbar = () => {
                 anchorEl={anchorElMen}
                 open={Boolean(anchorElMen)}
                 onClose={() => setAnchorElMen(null)}
-                MenuListProps={{ onMouseEnter: () => setAnchorElMen(anchorElMen), onMouseLeave: () => setAnchorElMen(null) }}
+                MenuListProps={{
+                  onMouseEnter: () => setAnchorElMen(anchorElMen),
+                  onMouseLeave: () => setAnchorElMen(null),
+                }}
               >
                 <MenuItem component={Link} to="/men/half-style-street-look">Half Style Street Look</MenuItem>
                 <MenuItem component={Link} to="/men/the-desi-formals">The Desi Formals</MenuItem>
@@ -101,6 +121,30 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </AppBar>
+
+      {/* Drawer for Mobile Navigation */}
+      <Drawer anchor="left" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
+        <Box sx={{ width: 250 }} role="presentation" onClick={() => setDrawerOpen(false)}>
+          <List>
+            <ListItem button component={Link} to="/">
+              <ListItemText primary="Home" />
+            </ListItem>
+            <ListItem button component={Link} to="/women/all">
+              <ListItemText primary="Women" />
+            </ListItem>
+            <ListItem button component={Link} to="/men/all">
+              <ListItemText primary="Men" />
+            </ListItem>
+            <Divider />
+            <ListItem button component={Link} to="/our-story">
+              <ListItemText primary="Our Story" />
+            </ListItem>
+            <ListItem button component={Link} to="/contact-us">
+              <ListItemText primary="Contact Us" />
+            </ListItem>
+          </List>
+        </Box>
+      </Drawer>
 
       {/* Search Input */}
       {showSearch && (
