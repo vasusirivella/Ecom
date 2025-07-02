@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Ecom/static/js/main.95422aab.js",
+    "main.js": "/Ecom/static/js/main.689e792e.js",
     "reactPlayerPreview.js": "/Ecom/static/js/reactPlayerPreview.73f455c9.chunk.js",
     "static/media/Naira.jpg": "/Ecom/static/media/Naira.c52a1863e14a2af7cdfd.jpg",
     "static/media/o1.jpg": "/Ecom/static/media/o1.75b7fbfeb12066f1b730.jpg",
@@ -19,10 +19,10 @@
     "static/media/cherry_red.jpg": "/Ecom/static/media/cherry_red.d2bfd9a6b28f021f2dcb.jpg",
     "static/media/04.jpg": "/Ecom/static/media/04.a51e98c55ceb1183b833.jpg",
     "index.html": "/Ecom/index.html",
-    "main.95422aab.js.map": "/Ecom/static/js/main.95422aab.js.map",
+    "main.689e792e.js.map": "/Ecom/static/js/main.689e792e.js.map",
     "reactPlayerPreview.73f455c9.chunk.js.map": "/Ecom/static/js/reactPlayerPreview.73f455c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.95422aab.js"
+    "static/js/main.689e792e.js"
   ]
 }

@@ -112,6 +112,38 @@ const CollectionGrid = ({ title, items }) => (
 export default function PehrinStyleCollectionPage() {
   return (
     <Box sx={{ backgroundColor: 'whitesmoke' }}>
+
+      {/* WhatsApp Floating Button */}
+      <Box
+        component="a"
+        href="https://wa.me/91934" // Replace with your number
+        target="_blank"
+        rel="noopener noreferrer"
+        sx={{
+          position: 'fixed',
+          bottom: { xs: 16, md: 24 },
+          right: { xs: 16, md: 24 },
+          zIndex: 1000,
+          backgroundColor: '#25D366',
+          borderRadius: '50%',
+          width: 56,
+          height: 56,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          boxShadow: 3,
+          '&:hover': {
+            boxShadow: 6,
+            backgroundColor: '#1ebc59',
+          },
+        }}
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          style={{ width: 28, height: 28 }}
+        />
+      </Box>
       {/* Full-Width Autoplay Background Video */}
       <Box sx={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
         <ReactPlayer
@@ -158,38 +190,6 @@ export default function PehrinStyleCollectionPage() {
       <TestimonialsSection />
 
       <NewLaunchSection />
-
-      {/* WhatsApp Floating Button */}
-      <Box
-        component="a"
-        href="https://wa.me/919347462437" // Replace with your number
-        target="_blank"
-        rel="noopener noreferrer"
-        sx={{
-          position: 'fixed',
-          bottom: { xs: 16, md: 24 },
-          right: { xs: 16, md: 24 },
-          zIndex: 1000,
-          backgroundColor: '#25D366',
-          borderRadius: '50%',
-          width: 56,
-          height: 56,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          boxShadow: 3,
-          '&:hover': {
-            boxShadow: 6,
-            backgroundColor: '#1ebc59',
-          },
-        }}
-      >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-          alt="WhatsApp"
-          style={{ width: 28, height: 28 }}
-        />
-      </Box>
 
     </Box>
   );
