@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   AppBar,
   Toolbar,
@@ -19,12 +19,28 @@ import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import { Link } from 'react-router-dom';
+import LogoutIcon from '@mui/icons-material/Logout';
+import { useLocation } from 'react-router-dom';
+
 
 const Navbar = () => {
-  const [anchorElWomen, setAnchorElWomen] = React.useState(null);
-  const [anchorElMen, setAnchorElMen] = React.useState(null);
-  const [showSearch, setShowSearch] = React.useState(false);
-  const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [anchorElWomen, setAnchorElWomen] = useState(null);
+  const [anchorElMen, setAnchorElMen] = useState(null);
+  const [showSearch, setShowSearch] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [user, setUser] = useState(null);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const userData = sessionStorage.getItem('user');
+    if (userData) {
+      setUser(JSON.parse(userData));
+    } else {
+      setUser(null);
+    }
+  }, [location]);
+
 
   return (
     <>
@@ -107,17 +123,46 @@ const Navbar = () => {
             </Button>
           </Box>
 
-          {/* Icons */}
-          <Box>
+          {/* Icons Section */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            {/* Search Icon */}
             <IconButton onClick={() => setShowSearch(true)} sx={{ color: '#333' }}>
               <SearchIcon />
             </IconButton>
-            <IconButton component={Link} to="/login" sx={{ color: '#333' }}>
-              <AccountCircleIcon />
-            </IconButton>
+
+            {/* Cart Icon */}
             <IconButton component={Link} to="/cart" sx={{ color: '#333' }}>
               <ShoppingBagIcon />
             </IconButton>
+
+            {user ? (
+              <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1 }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                  <Typography variant="caption" sx={{ fontSize: 10, color: '#333' }}>
+                    {user.name}
+                  </Typography>
+                  <Typography variant="caption" sx={{ fontSize: 10, color: '#333' }}>
+                    {user.email}
+                  </Typography>
+                </Box>
+
+                <IconButton
+                  onClick={() => {
+                    sessionStorage.clear();
+                    setUser(null);
+                    window.location.href = '/Ecom'; // or use navigate('/login') if using useNavigate
+                  }}
+                  sx={{ color: '#333' }}
+                >
+                  <LogoutIcon />
+                </IconButton>
+              </Box>
+            ) : (
+              <IconButton component={Link} to="/login" sx={{ color: '#333' }}>
+                <AccountCircleIcon />
+              </IconButton>
+            )}
+
           </Box>
         </Toolbar>
       </AppBar>

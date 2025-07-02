@@ -10,6 +10,7 @@ import ProductList from './Components/ProductList';
 import PrivateRoute from './Components/PrivateRoute';
 import ContactUsPage from './Components/ContactUsPage';
 import ProductListingPage from './Components/ProductListingPage';
+import RegisterPage from './Components/RegisterPage';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/cart" element={<PrivateRoute><CartPage /></PrivateRoute>} />
             <Route path="/payment" element={<PrivateRoute><PaymentPage /></PrivateRoute>} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/our-story" element={<OurStoryComponent />} />
             {/* Dynamic routes for Women's categories */}
