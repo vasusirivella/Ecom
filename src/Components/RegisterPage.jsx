@@ -168,7 +168,7 @@ function RegisterPage() {
                 <Box sx={{ mt: 2 }}>
                     <Typography variant="caption">
                         Already have an account?{' '}
-                        <MuiLink href="/Ecom/login" underline="hover" sx={{ color: '#800000', fontWeight: 'bold' }}>
+                        <MuiLink href="/Ecom/#/login" underline="hover" sx={{ color: '#800000', fontWeight: 'bold' }}>
                             Login
                         </MuiLink>
                     </Typography>
