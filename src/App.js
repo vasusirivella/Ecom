@@ -17,7 +17,7 @@ function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <Router basename='/Ecom'>
+        <Router>
           <Navbar />
           <Routes>
             <Route path="/" element={<ProductList />} />
