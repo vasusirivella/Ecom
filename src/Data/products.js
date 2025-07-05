@@ -12,10 +12,22 @@ import img08 from '../images/img/08.jpg'; // Naina
 import img09 from '../images/img/09.jpg'; // Geet
 import img10 from '../images/img/10.jpg'; // Aisha
 import img11 from '../images/img/11.jpg'; // Aisha
+// --- The Sanskari Drips (Men) ---
 import img51 from '../images/img/51.jpg'; // The Sanskari Drips
 import img52 from '../images/img/52.jpg'; // The Sanskari Drips
 import img53 from '../images/img/53.jpg'; // The Sanskari Drips
 import img54 from '../images/img/54.jpg'; // The Sanskari Drips
+import img55 from '../images/img/55.jpg'; // The Sanskari Drips
+import img56 from '../images/img/56.jpg'; // The Sanskari Drips
+import img57 from '../images/img/57.jpg'; // The Sanskari Drips
+import img58 from '../images/img/58.jpg'; // The Sanskari Drips
+import img59 from '../images/img/59.jpg'; // The Sanskari Drips
+import img60 from '../images/img/60.jpg'; // The Sanskari Drips
+import img61 from '../images/img/61.jpg'; // The Sanskari Drips
+import img62 from '../images/img/62.jpg'; // The Sanskari Drips
+import img63 from '../images/img/63.jpg'; // The Sanskari Drips
+import img64 from '../images/img/64.jpg'; // The Sanskari Drips
+
 
 // ✅ All Products
 export const allProducts = [
@@ -127,10 +139,9 @@ export const allProducts = [
     isSale: false,
   },
 
-  // --- Men's The Sanskari Drips Collection ---
   {
     id: 'men-sd-1',
-    category: 'the-sanskari-drips',
+    category: 'half-style-street-look',
     gender: 'men',
     name: 'Street Style Shirt',
     originalPrice: '₹ 1,200.00',
@@ -140,7 +151,7 @@ export const allProducts = [
   },
   {
     id: 'men-sd-2',
-    category: 'the-sanskari-drips',
+    category: 'half-style-street-look',
     gender: 'men',
     name: 'Urban Casual T-Shirt',
     originalPrice: '₹ 700.00',
@@ -150,7 +161,7 @@ export const allProducts = [
   },
   {
     id: 'men-sd-3',
-    category: 'the-sanskari-drips',
+    category: 'the-desi-formals',
     gender: 'men',
     name: 'Classic Kurta Set',
     originalPrice: '₹ 4,500.00',
@@ -160,12 +171,112 @@ export const allProducts = [
   },
   {
     id: 'men-sd-4',
-    category: 'the-sanskari-drips',
+    category: 'the-desi-formals',
     gender: 'men',
     name: 'Ethnic Jacket & Kurta',
     originalPrice: '₹ 2,999.00',
     salePrice: '₹ 2,299.00',
     image: img54,
+    isSale: true,
+  },
+  {
+    id: 'men-sd-5',
+    category: 'the-sanskari-drips',
+    gender: 'men',
+    name: 'Traditional Sherwani',
+    originalPrice: '₹ 5,200.00',
+    salePrice: '₹ 4,499.00',
+    image: img55,
+    isSale: true,
+  },
+  {
+    id: 'men-sd-6',
+    category: 'the-sanskari-drips',
+    gender: 'men',
+    name: 'Floral Festive Kurta',
+    originalPrice: '₹ 1,799.00',
+    salePrice: '₹ 1,299.00',
+    image: img56,
+    isSale: true,
+  },
+  {
+    id: 'men-sd-7',
+    category: 'the-sanskari-drips',
+    gender: 'men',
+    name: 'Printed Cotton Kurta',
+    originalPrice: '₹ 999.00',
+    salePrice: '₹ 799.00',
+    image: img57,
+    isSale: false,
+  },
+  {
+    id: 'men-sd-8',
+    category: 'the-desi-formals',
+    gender: 'men',
+    name: 'Designer Nehru Jacket',
+    originalPrice: '₹ 2,199.00',
+    salePrice: '₹ 1,799.00',
+    image: img58,
+    isSale: true,
+  },
+  {
+    id: 'men-sd-9',
+    category: 'the-sanskari-drips',
+    gender: 'men',
+    name: 'Silk Blend Kurta',
+    originalPrice: '₹ 2,800.00',
+    salePrice: '₹ 2,199.00',
+    image: img59,
+    isSale: true,
+  },
+  {
+    id: 'men-sd-10',
+    category: 'all-rounders',
+    gender: 'men',
+    name: 'Festive Jodhpuri Suit',
+    originalPrice: '₹ 6,999.00',
+    salePrice: '₹ 5,499.00',
+    image: img60,
+    isSale: true,
+  },
+  {
+    id: 'men-sd-11',
+    category: 'half-style-street-look',
+    gender: 'men',
+    name: 'Linen Ethnic Shirt',
+    originalPrice: '₹ 1,499.00',
+    salePrice: '₹ 1,099.00',
+    image: img61,
+    isSale: false,
+  },
+  {
+    id: 'men-sd-12',
+    category: 'the-sanskari-drips',
+    gender: 'men',
+    name: 'Festival Wear Kurta',
+    originalPrice: '₹ 1,799.00',
+    salePrice: '₹ 1,299.00',
+    image: img62,
+    isSale: true,
+  },
+  {
+    id: 'men-sd-13',
+    category: 'the-sanskari-drips',
+    gender: 'men',
+    name: 'Royal Silk Kurta Set',
+    originalPrice: '₹ 3,499.00',
+    salePrice: '₹ 2,799.00',
+    image: img63,
+    isSale: true,
+  },
+  {
+    id: 'men-sd-14',
+    category: 'all-rounders',
+    gender: 'men',
+    name: 'Wedding Jacket Suit',
+    originalPrice: '₹ 6,200.00',
+    salePrice: '₹ 4,999.00',
+    image: img64,
     isSale: true,
   },
 ];
