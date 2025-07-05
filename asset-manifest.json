@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Ecom/static/js/main.1e3ca20f.js",
+    "main.js": "/Ecom/static/js/main.02645038.js",
     "reactPlayerPreview.js": "/Ecom/static/js/reactPlayerPreview.73f455c9.chunk.js",
     "static/media/Naira.jpg": "/Ecom/static/media/Naira.c52a1863e14a2af7cdfd.jpg",
     "static/media/o1.jpg": "/Ecom/static/media/o1.75b7fbfeb12066f1b730.jpg",
@@ -13,16 +13,26 @@
     "static/media/53.jpg": "/Ecom/static/media/53.5a7c2e0b72b1fe44e39b.jpg",
     "static/media/01.jpg": "/Ecom/static/media/01.4eb1eb88da835881213b.jpg",
     "static/media/ourstory.jpg": "/Ecom/static/media/ourstory.d0b59f29b1aeff7cd2b7.jpg",
+    "static/media/62.jpg": "/Ecom/static/media/62.2989fbfb197386e765d3.jpg",
+    "static/media/59.jpg": "/Ecom/static/media/59.ef534c8e1a03241e98e0.jpg",
     "static/media/51.jpg": "/Ecom/static/media/51.2c83b63acd0346622ece.jpg",
+    "static/media/56.jpg": "/Ecom/static/media/56.2a0e544e7a0b15db6f7b.jpg",
+    "static/media/63.jpg": "/Ecom/static/media/63.17cd2606356d7dc800ee.jpg",
     "static/media/54.jpg": "/Ecom/static/media/54.b712773ab1613cbdc33a.jpg",
+    "static/media/64.jpg": "/Ecom/static/media/64.ad8117d70d3c381757b7.jpg",
+    "static/media/58.jpg": "/Ecom/static/media/58.2c2974f429ec2acf5855.jpg",
+    "static/media/61.jpg": "/Ecom/static/media/61.d22c4dea46b18be0bacd.jpg",
+    "static/media/55.jpg": "/Ecom/static/media/55.8d7ff3e3b39f909bd2c0.jpg",
+    "static/media/60.jpg": "/Ecom/static/media/60.44d3ca8b07fe9378b9bc.jpg",
+    "static/media/57.jpg": "/Ecom/static/media/57.f6ad4dcb133ac3f472ca.jpg",
     "static/media/10.jpg": "/Ecom/static/media/10.0a6439530c38213284b3.jpg",
     "static/media/cherry_red.jpg": "/Ecom/static/media/cherry_red.d2bfd9a6b28f021f2dcb.jpg",
     "static/media/04.jpg": "/Ecom/static/media/04.a51e98c55ceb1183b833.jpg",
     "index.html": "/Ecom/index.html",
-    "main.1e3ca20f.js.map": "/Ecom/static/js/main.1e3ca20f.js.map",
+    "main.02645038.js.map": "/Ecom/static/js/main.02645038.js.map",
     "reactPlayerPreview.73f455c9.chunk.js.map": "/Ecom/static/js/reactPlayerPreview.73f455c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.1e3ca20f.js"
+    "static/js/main.02645038.js"
   ]
 }
